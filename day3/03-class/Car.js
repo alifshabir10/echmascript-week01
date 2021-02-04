@@ -6,9 +6,9 @@ export default class Car {
         Car.totalCar++;
     }
 
-    sayHi(say) {
-        return "car" + say;
-    }
+    // sayHi(say) {
+    //     return "car" + say;
+    // }
 }
 
 class Taxi extends Car {

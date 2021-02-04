@@ -23,6 +23,6 @@ const{id,...info} = product;
 console.log(id);
 console.log(info);
 
-const{id,...info,variant:{type}} = product;
-// console.log(id);
-console.log(type);
+const{variant:{core},price} = product;
+console.log(core);
+console.log(price);

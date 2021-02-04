@@ -2,7 +2,7 @@
 const x = [1,2,3];
 const y = ["a","b","c"];
 const z = [...x,...y,4,5,6,7]
-console.log(z);
+// console.log(z);
 
 // rest parameter
 const {a, ...rest} = {a:1,b:2,c:3};

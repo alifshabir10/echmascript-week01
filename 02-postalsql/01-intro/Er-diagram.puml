@@ -1,0 +1,18 @@
+@startuml classdiagram-Erdiagram
+
+class Category {
+ +cate_id : number <generated>
+ +cate_name : string <generated>
+}
+
+class Product {
+    +prod_id : number <generated>
+    +prod_title : varchar(25)
+    +prod_description : varchar(255)
+    +prod_stok : integer
+    +prod_price : number
+    +
+}
+
+
+@enduml

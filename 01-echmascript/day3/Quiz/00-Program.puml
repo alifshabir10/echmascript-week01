@@ -1,0 +1,45 @@
+@startuml classdiagram-Program
+
+class Members{
+    +fullName : String
+    +city : String
+    +education : String
+    +grade : int
+    +batch : int
+    +type : String
+    +skillPoint : int
+
+    
+
+    ' +info():String
+}
+class Beasiswa extends Members {
+    +insentif
+    ' +totalBeasiswa()
+}
+
+class Regular extends Members{
+    +netPrice
+    ' +totalRegular()
+}
+
+class Main {
+    Main()
+}
+
+interface apiAll{
+    +totalMembers(listMember):Number
+    +totalBeasiswa(listBeasiswa):Number
+    +totalReguler(listReguler):Number
+    +totalUangSaku(listUangSaku):Number
+    +totalNetPrice(listNetPrice):Number
+}
+
+Main --> apiAll
+apiAll --> Members
+apiAll --> Beasiswa
+apiAll --> Reguler
+
+
+
+@enduml
